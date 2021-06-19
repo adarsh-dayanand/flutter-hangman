@@ -32,6 +32,7 @@ class HangmanWords {
       if (!_usedNumbers.contains(randNumber)) {
         notUnique = false;
         _usedNumbers.add(randNumber);
+        print(_words[randNumber]);
         return _words[randNumber];
       } else {
         randNumber = rand.nextInt(wordLength);
